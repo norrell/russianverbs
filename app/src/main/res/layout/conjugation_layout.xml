@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/conju_infinitive_pair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="делать / сделать"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/conju_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="to do, make"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:paddingLeft="18dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Я" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ты" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Он" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Мы" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вы" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Они" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лаю"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лаешь"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_3s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лает"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_1p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лаем"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_2p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лаете"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_pres_impf_3p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лают"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Past"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="m" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="n" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pl" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_past_impf_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лал"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_impf_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лала"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_impf_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лало"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_impf_pl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лали"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_past_pf_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лал"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_pf_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лала"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_pf_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лало"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_past_pf_pl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лали"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FUTURE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Future"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Я" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ты" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Он" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Мы" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вы" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Они" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="буду де́лать"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="будешь де́лать"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_3s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="будет де́лать"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_1p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="будем де́лать"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_2p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="будете де́лать"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_impf_3p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="будут де́лать"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лаю"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лаешь"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_3s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лает"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_1p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лаем"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_2p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лаете"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_fut_pf_3p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лают"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- IMPERATIVE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imperative"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pl" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_imp_impf_2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лай"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_imp_impf_2p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лайте"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_imp_pf_2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лай"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_imp_pf_2p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лайте"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Gerund -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gerund"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_ger_impf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лая"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_ger_pf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лав"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Participles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participle"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pr.a." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pa.a." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pr.p." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pa.p." />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imperfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/conju_part_pres_att_impf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лающий"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_part_past_att_impf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лавший"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_part_pres_pass_impf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́лаемый"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conju_part_past_pass_impf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="де́ланный"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfective"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+
+                    <TextView
+                        android:id="@+id/conju_part_past_att_pf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́лавший"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+
+                    <TextView
+                        android:id="@+id/conju_part_past_pass_pf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="сде́ланный"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<Space
+            android:layout_width="1dp"
+            android:layout_height="62dp" />-->
+
+    </LinearLayout>
+</ScrollView>
