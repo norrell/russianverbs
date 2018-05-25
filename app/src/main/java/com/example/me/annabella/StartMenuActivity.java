@@ -45,8 +45,8 @@ public class StartMenuActivity extends AppCompatActivity {
         }
     }
 
-    private ArrayList<String[]> getAllVerbsBasicInfoFromDatabase() {
-        ArrayList<String[]> verbsListData = new ArrayList<>();
+    private VerbSummaryArray getAllVerbsBasicInfoFromDatabase() {
+        VerbSummaryArray verbsListData = new VerbSummaryArray();
         Uri verbs = Uri.parse("content://com.example.me.annabella.RussianConjugationProvider");
         String[] projection = new String[] {
                 RussianConjugationProvider._ID,
@@ -128,8 +128,13 @@ public class StartMenuActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    public void showAllVerbs(View view) {
-        Intent intent = new Intent(this, AllVerbsActivity.class);
+//    public void showAllVerbs(View view) {
+//        Intent intent = new Intent(this, AllVerbsActivity.class);
+//        startActivity(intent);
+//    }
+
+    public void showStudyList(View view) {
+        Intent intent = new Intent(this, StudyListActivity.class);
         startActivity(intent);
     }
 

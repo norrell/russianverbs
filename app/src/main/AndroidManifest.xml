@@ -12,8 +12,8 @@
         <activity
             android:name=".StartMenuActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,8 +31,8 @@
         <activity
             android:name=".FlashcardActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".StartMenuActivity" />
@@ -45,9 +45,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".FlashcardActivity" />
         </activity>
+
         <provider
-            android:authorities="com.example.me.annabella.RussianConjugationProvider"
-            android:name="RussianConjugationProvider"/>
+            android:name=".RussianConjugationProvider"
+            android:authorities="com.example.me.annabella.RussianConjugationProvider" />
+
+        <activity android:name=".StudyListActivity"
+            android:parentActivityName=".StartMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:launchMode="standard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartMenuActivity" />
+        </activity>
     </application>
 
 </manifest>

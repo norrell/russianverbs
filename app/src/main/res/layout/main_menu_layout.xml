@@ -37,8 +37,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:onClick="showAllVerbs"
-            android:text="Manage Study List"
+            android:onClick="showStudyList"
+            android:text="Study List"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:typeface="serif" />

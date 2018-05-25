@@ -35,6 +35,8 @@ public class FlashcardActivity extends AppCompatActivity {
         Log.d("flashcard", "onCreate");
         super.onCreate(savedInstanceState);
 
+        setTitle("Flashcard");
+
         if (Data.getInstance().getStudyList() == null
                 || Data.getInstance().getStudyList().size() == 0) {
             setContentView(R.layout.empty_list_layout);
@@ -63,7 +65,7 @@ public class FlashcardActivity extends AppCompatActivity {
         /* Retrieve the corresponding verb field from the
          * ArrayList of all the verbs in memory. */
         long verbID = studyListArray.get(mIndexes.get(currentPos));
-        String[] fields = Data.getInstance().getAllVerbs().get((int) verbID - 1);
+        String[] fields = Data.getInstance().getAllVerbs().getByID((int) verbID); // +++++
         mInfImpfTextView = findViewById(R.id.flashcard_inf_impf);
         mInfPfTextView = findViewById(R.id.flashcard_inf_pf);
         mMeaningTextView = findViewById(R.id.flashcard_meaning);
@@ -94,7 +96,7 @@ public class FlashcardActivity extends AppCompatActivity {
         currentPos++;
         /* Retrieve the respective verbs  */
         long verbID = studyListArray.get(mIndexes.get(currentPos));
-        String[] fields = Data.getInstance().getAllVerbs().get((int) verbID - 1);
+        String[] fields = Data.getInstance().getAllVerbs().getByID((int) verbID);
         mId = fields[0];
         mInfImpfTextView.setText(fields[1]);
         mInfPfTextView.setText(fields[2]);
@@ -109,7 +111,7 @@ public class FlashcardActivity extends AppCompatActivity {
 
         currentPos--;
         long verbID = studyListArray.get(mIndexes.get(currentPos));
-        String[] fields = Data.getInstance().getAllVerbs().get((int) verbID - 1);
+        String[] fields = Data.getInstance().getAllVerbs().getByID((int) verbID);
         mId = fields[0];
         mInfImpfTextView.setText(fields[1]);
         mInfPfTextView.setText(fields[2]);

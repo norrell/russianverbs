@@ -6,4 +6,9 @@
     android:scrollbars="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp" />
+    android:layout_margin="8dp"
+    app:fastScrollEnabled="true"
+    app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+    app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+    app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+    app:fastScrollVerticalTrackDrawable="@drawable/line_drawable" />

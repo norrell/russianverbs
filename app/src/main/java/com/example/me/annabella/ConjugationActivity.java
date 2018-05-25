@@ -57,6 +57,7 @@ public class ConjugationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Conjugation");
         setContentView(R.layout.conjugation_layout);
 
         inf_pair = findViewById(R.id.conju_infinitive_pair);

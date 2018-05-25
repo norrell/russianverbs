@@ -10,13 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 
 public class AllVerbsAdapter extends RecyclerView.Adapter<AllVerbsAdapter.ViewHolder> {
-    private ArrayList<String[]> mDataset;
+    private VerbSummaryArray mDataset;
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         LinearLayout mLinearLayout;
@@ -33,29 +31,29 @@ public class AllVerbsAdapter extends RecyclerView.Adapter<AllVerbsAdapter.ViewHo
         }
     }
 
-    AllVerbsAdapter(ArrayList<String[]> myDataset) {
+    AllVerbsAdapter(VerbSummaryArray myDataset) {
         mDataset = myDataset;
     }
 
     @NonNull
     @Override
     public AllVerbsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
-                                                         int viewType) {
+                                                          int viewType) {
         LinearLayout v = (LinearLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_element_layout, parent, false);
 
-        return new ViewHolder(v);
+        return new AllVerbsAdapter.ViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String pair = mDataset.get(position)[1] + " / " + mDataset.get(position)[2];
+    public void onBindViewHolder(@NonNull AllVerbsAdapter.ViewHolder holder, int position) {
+        String pair = mDataset.getByIndex(position)[1] + " / " + mDataset.getByIndex(position)[2];
         holder.mVerbPair.setText(pair);
 
-        String meaning = mDataset.get(position)[3];
+        String meaning = mDataset.getByIndex(position)[3];
         holder.mMeaning.setText(meaning);
 
-        final long verbID = Long.parseLong(mDataset.get(position)[0]);
+        final long verbID = Long.parseLong(mDataset.getByIndex(position)[0]);
 
         HashSet<Long> studyList = Data.getInstance().getStudyList();
 
@@ -101,3 +99,4 @@ public class AllVerbsAdapter extends RecyclerView.Adapter<AllVerbsAdapter.ViewHo
         return mDataset.size();
     }
 }
+

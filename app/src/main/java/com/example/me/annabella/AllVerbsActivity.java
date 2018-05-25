@@ -1,11 +1,9 @@
 package com.example.me.annabella;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +15,8 @@ public class AllVerbsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("AllVerbsActivity", "onCreate");
+
+        setTitle("All Verbs");
         setContentView(R.layout.all_verbs_layout);
 //        Toolbar myToolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(myToolbar);
@@ -33,7 +33,7 @@ public class AllVerbsActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         Log.d("onCreateOptionsMenu", "");
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.all_verbs_menu, menu);
         return true;
     }
 
@@ -45,7 +45,10 @@ public class AllVerbsActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_select_all:
                 return true;
-            case R.id.action_clear_studylist:
+            case R.id.action_clear_all:
+                return true;
+            case android.R.id.home:
+                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
